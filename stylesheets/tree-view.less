@@ -7,6 +7,19 @@
 	.selected:before {
 		background: #C1C1C1;
 	}
+	//
+	// .icon-file-directory:before,
+	// .icon-file-text:before {
+	// 	margin: 0;
+	// 	padding: 0;
+	// 	content: '';
+	// 	width: 0px;
+	// 	height:0;
+	// }
+	//
+	li.entry {
+		font-size: @font-size;
+	}
 }
 
 .focusable-panel {
@@ -29,4 +42,9 @@
 			color: #fff !important;
 		}
 	}
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
+.list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+	margin-left: 0;
 }
